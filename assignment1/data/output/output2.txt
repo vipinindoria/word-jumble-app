@@ -1,0 +1,2 @@
+Length of shortest  transformation sequence : 7
+The shortest transformation is: toon -> poon -> poin -> poie -> plie -> plee -> plea

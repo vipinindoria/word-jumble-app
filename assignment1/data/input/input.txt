@@ -1,0 +1,3 @@
+beginWord = toon
+endWord = plea
+Dict = poon, plee, same, pie, plea, plie, poin

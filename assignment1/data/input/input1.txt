@@ -1,0 +1,3 @@
+beginWord = gedk
+endWord = geek
+Dict = geek, gefk

@@ -1,0 +1,2 @@
+Length of shortest  transformation sequence : 2
+The shortest transformation is: gedk -> geek

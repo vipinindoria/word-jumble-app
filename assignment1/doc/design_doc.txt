@@ -1,0 +1,25 @@
+The problem statement can be modeled as a graph in the following way:
+ - Each vertex in the graph is a word in the list
+ - Each edge in the graph is a single letter change between the two words on either end
+Graph density is dependent on input, and can range from very sparse, to maximum density.
+It is also theoretically possible to encounter an input with no edges, which would return no solution.
+
+The required solution is to find the shortest path between the beginning word and the end word.
+
+This can be achieved using Dijkstra's Algorithm.
+Time complexity O(k+nlogn)
+where k = number of edges
+and n = number of words
+
+Alternate option would be to run A* search, with lower time complexity O(b^d)
+where b = branching factor and d = heuristic depth
+This was avoided due to high potential branching factor and lack of a convenient available heuristic.
+Also, Dijkstra minimizes the space complexity without sacrificing control of corner cases,
+making it suitable for this assignment.
+
+Basic flow of operations:
+ - Read file input and create word list
+ - Generate graph where each word is a vertex and connects to other words with 1-letter difference
+ - Run Dijkstra's algorithm on the graph for beginword and endword
+ - Save the shortest traversal as prescribed by the above
+ - Output traversal and length to file
